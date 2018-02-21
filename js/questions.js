@@ -96,19 +96,6 @@ function corregirNumber(){
   }
 }
 
-function corregirNumber1(){
-  //Vosotros debéis comparar el texto escrito con el texto que hay en el xml
-  //en este ejemplo hace una comparación de números enteros
-  var s=formElement.elements[5].value;     
-  if (s==numeroSecreto1) {
-   darRespuestaHtml("P1: Exacto!");
-   nota +=1;
-  }
-  else {
-    if (s>numeroSecreto1) darRespuestaHtml("P1: Te has pasado");
-    else darRespuestaHtml("P1: Te has quedado corto");
-  }
-}
 
 function corregirSelect(){
   //Compara el índice seleccionado con el valor del íncide que hay en el xml (<answer>2</answer>)
